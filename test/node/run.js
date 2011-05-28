@@ -1,14 +1,5 @@
 var suites = [
-  '/test/shared/tests/basic.js',
-  '/test/shared/tests/scene.js',
-  '/test/shared/tests/validation.js',
-  '/test/shared/tests/lag.js',
-  '/test/shared/tests/input.js',
-  '/test/shared/tests/animation.js',
-  '/test/shared/tests/interpolation.js',
-  '/test/shared/tests/client.js',
-  '/test/shared/tests/server.js',
-  '/test/shared/tests/pipe.js'
+  '/test/shared/tests/client',
 ];
 
 if (process.argv.length > 2) {
@@ -20,3 +11,9 @@ if (process.argv.length > 2) {
 } else {
   require('nodeunit/reporters/default').run(suites);
 }
+
+
+exports['calculate'] = function (test) {
+    test.equal(doubled.calculate(2), 4);
+    test.done();
+};

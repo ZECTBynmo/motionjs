@@ -5,3 +5,8 @@ motion = (typeof motion === 'undefined')        ?
 if (typeof exports !== 'undefined') {
   var motionTests = exports
 }
+;(function(exports) {
+
+
+
+}((typeof module === "undefined") ? window : module.exports));

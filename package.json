@@ -12,5 +12,7 @@
     "url": "http://github.com/motionjs.git"
   },
   "dependencies": {},
-  "devDependencies" : {},
+  "devDependencies" : {
+    "nodeunit" : "*"
+  }
 }
