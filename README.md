@@ -33,5 +33,6 @@ each of the actions performed by the client are queued and pushed to the
 client on a regular interval.  When the server receives these commands
 it looks back in time to ensure that the each of the client's commands
 would have been valid when they were created.  If the current command is
-valid, the command/action is applied to the servers and the client is
-notified that the command was successful on the next snapshot.
+valid, the command/action is applied to the servers scene. The client
+is notified that the command was successful on the next snapshot.
+
