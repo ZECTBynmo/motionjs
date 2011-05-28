@@ -1,4 +1,2 @@
-module.exports = {
-  client : require('../shared/tests/client'),
-  server : require('../shared/tests/server')
-};
+module.exports = [  require('../shared/tests/server')
+];

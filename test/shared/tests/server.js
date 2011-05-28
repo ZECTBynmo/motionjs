@@ -2,10 +2,15 @@ motion = (typeof motion === 'undefined')        ?
           require(__dirname + '/../../../index') :
           motion;
 
-if (typeof exports !== 'undefined') {
-  var motionTests = exports
-}
+var noop = function() {};
 
-exports.calculate = function (t) {
-  t.done()
+module.exports = {
+  'SANITY: test tick rate' : function(t) {
+    var handle = motion.server(1, noop, noop, function(tick, patches) {
+      t.ok(tick === 1);
+      t.ok(patches.length === 0);
+      handle.stop();
+      t.done();
+    });
+  }
 };
