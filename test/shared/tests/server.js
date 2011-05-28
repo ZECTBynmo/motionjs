@@ -7,5 +7,5 @@ if (typeof exports !== 'undefined') {
 }
 
 exports.calculate = function (t) {
-  t.done();
+  t.done()
 };
