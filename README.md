@@ -10,7 +10,7 @@ Based on the techniques:
 
   * http://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking
   * http://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization
-  * http://udn.epicgames.com/Three/NetworkingOverview.html#Peer-to-Peer Model
+  * http://udn.epicgames.com/Three/NetworkingOverview.html
 
 motion.js provides a platform for realtime synchronization between
 multiple clients and authoritative server(s).  This is accomplished by
